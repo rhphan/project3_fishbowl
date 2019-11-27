@@ -1,0 +1,412 @@
+/* Enter your Styles below! */
+
+
+body { 
+	font-family: 'Montserrat', sans-serif;
+	background-color: #47D1C8;
+}
+
+main {
+}
+
+.about-header {
+	background-image: url(../image/icecream-nav.png);
+	background-size: cover;
+	background-position: center bottom;
+	text-align: center;
+	margin-top: -50px;
+	margin-bottom: -30px;
+}
+
+.flavors-header {
+	text-align: center;
+	margin-top: -50px;
+	margin-bottom: -30px;
+	background-color: #FF7D45;
+}
+
+.home {
+	background-image: url(../image/icecream-homepg.png);
+	padding-bottom: 50px;
+}
+
+.about-pg {
+	background-color: #FFF8E8;
+}
+
+.flavors-pg{
+	padding: 50px 0px 0px 0px;
+	background-color: #47D1C8;
+}
+
+.flavors {
+	display: grid;
+	grid-template-columns: 1fr 320px 1fr;
+	width: 80%;
+	margin: 50px auto 0px auto;
+	grid-gap: 50px 0px;
+	grid-template-rows: 10px 125px 125px 125px 125px 125px 100px 125px 125px 125px 125px 125px 125px 125px 125px ;
+	height: 3000px;
+    grid-template-areas:
+        'a a a'
+        '. . .'
+        '. . .'
+        '. . .'
+        '. . .'
+        '. . .'
+        '. . .'
+        '. . .'
+        '. . .'
+        '. . .'
+        '. . .'
+        '. . .'
+        '. . .'
+        '. . .';
+}
+
+.icecream {
+	width: 300px;
+	grid-row: 1 / span 15;
+	grid-row-start: 1;
+	grid-column: 2 / 3;
+	margin: auto;
+}
+
+.flavors-top {
+	grid-area: a;
+	height: 0px;
+}
+
+nav {
+
+}
+
+.subpage-nav {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin: auto;
+	padding: 0px 150px;
+	grid-column-gap: 10px;
+}
+
+h1 img{
+	width: 100%;
+}
+
+h2, h3{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: white;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+.h2-about {
+	color: #FF7D45;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+h4 {
+	font-weight: 700;
+	padding-top: 10px;
+}
+
+a { 
+	color: white;
+	text-decoration: none;
+}
+
+.italic {
+	font-style: italic;
+}
+
+p {
+	line-height: 150%;
+	color: white;
+}
+
+.first-paragraph {
+	padding-bottom: 10px;
+	padding-top: 10px;
+	color: #181818;
+}
+
+.second-paragraph {
+	padding-bottom: 30px;
+	color: #181818;
+}
+
+.contact {
+	padding-top: 10px;
+}
+
+.button-nav {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.right-align {
+	text-align: right;
+}
+
+.center-align {
+	text-align: center;
+}
+
+ul {
+
+}
+
+.features {
+	padding-top: 10px;
+	line-height: 150%;
+	text-transform: uppercase;
+}
+
+header {
+	padding-bottom: 20px;
+	display: grid;
+	grid-template-columns: 1fr;
+	padding-top: 50px;
+	width: auto;
+}
+
+.button {
+  background-color: #FF7D45;
+  border: none;
+  color: white;
+  margin: 5px 25px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.header-logo {
+	margin: auto;
+	align-content: center;
+	width: auto;
+}
+
+.subpage-logo img {
+	width: 100%;
+	min-width: 100px;
+	max-width: 200px;
+}
+
+.about {
+	padding: 50px 0px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 50px;
+	width: 80%;
+	margin: auto;
+}
+
+.about-img{
+	width: 100%;
+}
+
+.vertical-align {
+	display: inline-block;
+	height: 200px;
+	line-height: 200px;
+}
+
+.vertical-align-img {
+	display: grid;
+	align-items: center;
+	align-content: center;
+}
+
+footer {
+	padding: 50px 0px;
+	color: white;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	width: 80%;
+	margin: auto;
+	line-height: 125%;
+}
+
+.left {
+	text-align: left;
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+.socialmedia {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding-top: 5px;
+}
+
+.hide-desktop {
+	display: none;
+}
+
+#backtotop {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #FF7D45; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  font-size: 1.5em; /* Increase font size */
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: 900
+}
+
+@media only screen and (max-width: 862px) {
+	body {
+
+	}
+
+	.flavors-pg{
+		background-image: url(../image/icecream-vector.png);
+		background-size: auto 3000px;
+		background-repeat: no-repeat;
+		background-position: top 150px left -150px;
+
+	}
+
+	h1 img{
+		max-width: 450px;
+	}
+
+	header {
+		width: 100%;
+	}
+
+	.subpage-nav {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin: auto;
+		padding: 20px;
+		grid-column-gap: 80px;
+	}
+
+	.vertical-align {
+		display: inline-block;
+		height: 80px;
+		line-height: 80px;
+	}
+
+	.vertical-align-img {
+		display: grid;
+		align-items: center;
+		align-content: center;
+		grid-column: 1 / span 2;
+	}
+
+	.button {
+		display: flex;
+		justify-content: center;
+		width: 50%;
+		margin: 10px auto;
+		max-width: 200px;
+	}
+
+	.about {
+		grid-template-columns: 1fr;
+	}
+
+	.flavors-pg{
+	}
+
+	.flavors {
+		display: grid;
+		grid-template-columns: 1fr;
+		padding: 70px 0px 0px 150px;
+		height: 2950px;
+		width: 50%;
+		grid-template-rows: 125px 125px 125px 125px 125px 125px 125px 125px 125px 125px 125px 125px 125px 125px;
+		grid-template-areas:
+	        'a'
+	        '.'
+	        '.'
+	        '.'
+	        '.'
+	        '.'
+	        '.'
+	        '.'
+	        '.'
+	        '.'
+	        '.'
+	        '.'
+	        '.'
+	        '.';
+	}
+
+	.flavors-top {
+		grid-area: a;
+		height: 0px;
+	}
+
+	.right-align {
+		text-align: left;
+	}
+
+	footer {
+		display: grid;
+		grid-template-columns: auto;
+	}
+
+	.left {
+		text-align: center;
+		padding-bottom: 50px
+	}
+
+	.right {
+		text-align: center;
+		padding-top: 50px
+	}
+
+	.socialmedia {
+		justify-content: center;
+	}
+
+	.hide-desktop {
+		display: block;
+	}
+
+	.hide-mobile {
+		display: none;
+	}
+
+	.hide-mobile-top {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 863px) {
+	body {
+		
+	}
+
+}
+
+@media only screen and (min-width: 1241px) {
+	body {
+		
+	}
+}
