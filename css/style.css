@@ -181,7 +181,7 @@
 	animation-name: nervous;
     animation-delay: 2s;
     animation-duration: 2s;   
-    animation-timing-function: ease-in-out;
+    animation-timing-function: ease-out;
     animation-iteration-count: infinite;
 }
 
@@ -189,12 +189,21 @@
 	0% {
 		left: 178px;
     }  
-	33%   {	
+	5%   {	
 		left: 174px;
 	}
-    66% {
+	15%   {	
+		left: 174px;
+	}
+    20% {
     	left: 181px;
     }
+    30% {
+    	left: 181px;
+    }
+    35% {
+		left: 178px;
+    }  
     100% {
 		left: 178px;
     }  
