@@ -1,15 +1,207 @@
 /* Enter your Styles below! */
 
-.fish-bowl {
-	width: 500px;
-	display: block;
-	margin: auto;
-}
-
 .shaker {
 	width: 150px;
-	display: block;
-	margin: auto;
-	padding-bottom: 50px;
-	padding-left: 70px;
+    position: absolute;
+    margin: auto;
+	top: 20px;
+	right: 0;
+	bottom: 0;
+	left: 50px;
+	animation-name: feedthefish;
+    animation-delay: 0s;
+    animation-duration: 1s;   
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes feedthefish {
+	0%   {	
+		top: 0px;
+		left: 70px;
+	}
+    33% {
+    	top: 40px;
+    	left: 30px;
+    }
+    66% {
+    	top: 20px;
+    	left: 50px;
+    }  
+	100%   {	
+		top: 0px;
+		left: 70px;
+	}
+}
+
+.pellet-1 {
+	width: 20px;
+	position: absolute;
+    margin: auto;
+	top: -400px;
+	right: 0;
+	bottom: 0;
+	left: -900px;
+    animation-name: shakeit;
+    animation-delay: 0s;
+    animation-duration: 1s;   
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    transform: rotate(90deg) scale(.75,.75);
+}
+
+@keyframes shakeit {
+	0%   {	
+		top: -400px;
+	}
+    100% {
+    	top: 0px;
+    	left: -700px;
+		opacity: 0;
+    }
+}
+
+.pellet-2 {
+	width: 20px;
+	position: absolute;
+    margin: auto;
+	top: 80px;
+	right: 0;
+	bottom: 0;
+	left: -450px;
+    animation-name: shakeitt;
+    animation-delay: 0s;
+    animation-duration: 1s;   
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    transform: rotate(50deg) scale(.75,.75);
+}
+
+@keyframes shakeitt {
+	0%   {	
+		top: 80px;
+	}
+    100% {
+    	top: 250px;
+    	left: -300px;
+		opacity: 0;
+    }
+}
+
+.pellet-3 {
+	width: 20px;
+	position: absolute;
+    margin: auto;
+	top: 200px;
+	right: 0;
+	bottom: 0;
+	left: -120px;
+    animation-name: shakeittt;
+    animation-delay: 0s;
+    animation-duration: 1s;   
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shakeittt {
+	0%   {	
+		top: 200px;
+	}
+    100% {
+    	top: 400px;
+    	left: -100px;
+		opacity: 0;
+    }
+}
+
+.aquarium {
+	width: 500px;
+	height: 500px;
+    position: absolute;
+    margin: auto;
+	top: 200px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.fish-bowl {
+	width: 500px;
+	position: absolute;
+	z-index: 99;
+}
+
+
+.water-bg {
+	width: 498px;
+	position: absolute;
+	top: 95px;
+}
+
+.sand {
+	width: 400px;
+	position: absolute;
+	top: 325px;
+	left: 49px;
+}
+
+.seaweed-3 {
+	width: 50px;
+	position: absolute;
+	top: 300px;
+	left: 380px;
+}
+
+.seaweed-2 {
+	width: 50px;
+	position: absolute;
+	top: 200px;
+	left: 300px;
+}
+
+.seaweed-1 {
+	width: 50px;
+	position: absolute;
+	top: 180px;
+	left: 350px;
+}
+
+.fish {
+	width: 120px;
+	position: absolute;
+	top: 200px;
+	left: 80px;
+}
+
+.pupil {
+	width: 12px;
+	position: absolute;
+	top: 239px;
+	left: 178px;
+	animation-name: nervous;
+    animation-delay: 2s;
+    animation-duration: 2s;   
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes nervous {
+	0% {
+		left: 178px;
+    }  
+	33%   {	
+		left: 174px;
+	}
+    66% {
+    	left: 181px;
+    }
+    100% {
+		left: 178px;
+    }  
+}
+
+.water-fg {
+	width: 498px;
+	position: absolute;
+	top: 105px;
 }
